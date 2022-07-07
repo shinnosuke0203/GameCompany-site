@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
+
+:root {
+    --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+
+}
+
+* {
+    transition: all 0.4s ease;
+}
+
+body {
+    font-family: 'Zen Antique', serif;
+    color: white;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h2, h3 {
+    position: relative;
+    z-index: 1;
+    font-size: 3rem;
+    font-weight: 540;
+}
+
+a, p, span {
+    position: relative;
+    z-index: 1;
+}
+
+section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+header {
+    padding: 2.7rem 5.4rem;
+    text-shadow: rgb(0, 0, 0) 1px 3px 6px;
+    z-index: 1000;
+    position: fixed;
+}
+
+header .menu-bar {
+    position: absolute;
+    top: 30vh;
+    right: -200px;
+    background-color: #000;
+    width: 170px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    box-shadow: var(--box-shadow);
+    opacity: 0;
+}
+
+header .menu-bar.active {
+    right: -20px;
+    opacity: 1;
+}
+
+header .menu-bar li {
+    margin-bottom: 3rem;
+}
+
+header .menu-bar li a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+header .menu-bar li a:hover {
+    color: aquamarine;
+}
+
+header .book-open-btn {
+    display: none;
+}
+
+header .book-open-btn.active {
+    display: block;
+}
+
+header .book-close-btn.active {
+    display: none;
+}
+
+.logo-tittle {
+    cursor: pointer;
+}
+
+header img {
+    width: 3.5rem;
+    cursor: pointer;
+}
+
+.hero {
+    background-image: url(/images/another-world.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0,0.1);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.hero .tittle {
+    transform: translateY(240px);
+}
+
+.hero h1 {
+    text-shadow: rgb(0, 0, 0) 1px 3px 6px;
+    font-size: 7.5rem;
+}
+
+.hero h3 {
+    width: 450px;
+    text-align: right;
+    text-shadow: rgb(0, 0, 0) 1px 3px 6px;
+}
+
+.sale h2 {
+    font-size: 4rem;
+}
+
+.sale h3 {
+    font-size: 3rem;
+}
+
+.sale img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-effect {
+    box-shadow: var(--box-shadow);
+}
+
+.game-card {
+    background-color: white;
+}
+
+.game-card h5 {
+    font-size: 2rem;
+}
+
+.game-card p {
+    font-size: 1.7rem;
+    list-style: 1.8rem;
+    letter-spacing: 0.1rem;
+}
+
+.game-card:hover {
+    box-shadow: none;
+    transform: translateY(4px);
+}
+
+.company {
+    background-image: url(/images/house.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.company::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0,0.3);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.company h2 {
+    font-size: 2rem;
+}
+
+.company p {
+    font-size: 2.5rem;
+    line-height: 3.9rem;
+}
+
+.company-text-last {
+    position: absolute;
+    top: 70%;
+    left: 7%;
+}
+
+.company-info .more a {
+    display: inline-block;
+    font-size: 1.7rem;
+    color: white;
+    padding: 0.6rem;
+}
+
+.company-info .more a:hover {
+    color: aquamarine;
+    transform: translateX(1rem);
+}
+
+.hardware-card img {
+    width: 100%;
+    height: 100%;
+}
+
+.hardware-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.hardware-card .overlay {
+    content: "";
+    position: absolute;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.hardware-card:hover .overlay {
+    background-color: rgb(13, 71, 92);
+    opacity: 0.3;
+}
+
+.hardware-card h3 {
+    position: absolute;
+    color: white;
+    font-size: 4rem;
+    opacity: 0;
+}
+
+.hardware-card:hover h3 {
+    opacity: 1;
+}
+.hardware-card:hover img {
+    transform: scale(1.1);
+}
+
+.contact {
+    background-image: url(/images/butterfly.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.contact input {
+    height: 4rem;
+    margin-bottom: 2rem;
+}
+
+.contact textarea {
+    width: 70%;
+}
+
+.contact .vision-sight-logo h3 {
+    position: absolute;
+    bottom: 10%;
+    right: 8%;
+    font-size: 4rem;
+}
+
+
+footer {
+    padding: 40px;
+    font-size: 2rem;
+}
+
+footer h2 {
+    font-size: 3rem;
+    height: 50%;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: aquamarine;
+}
+
+@media (max-width: 1000px) {
+    .hero h1 {
+        font-size: 5rem;
+    }
+
+    .hero h3 {
+        width: 400px;
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 760px) {
+    .hero .tittle {
+        transform: translateY(-50px);
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 6rem;
+    }
+
+    .hero h3 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 45%;
+    }
+
+    .hero h3 {
+        font-size: 2rem;
+    }
+
+    .company-info {
+        text-align: center !important;
+        padding: 2rem !important;
+    }
+
+    .company-info h2 {
+        margin-bottom: 4.6rem;
+    }
+
+    .company-info  p {
+        line-height: 5rem;
+        font-size: 2.2rem;
+    }
+    
+    .company-info .more {
+        margin-top: 9rem;
+    }
+    
+
+    .company-text-last {
+        position: static;
+        margin-top: 30rem;
+    }
+
+    .contact h2 {
+        font-size: 4.6rem;
+        text-align: center;
+    }
+
+    footer {
+        padding-top: 15px;
+    }
+}
