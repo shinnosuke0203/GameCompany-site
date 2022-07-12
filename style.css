@@ -166,7 +166,7 @@ header img {
 }
 
 .company {
-    background-image: url(”https://github.com/shinnosuke0203/GameCompany-site/blob/main/images/house.jpg?raw=true”);
+    background-image: url(”images/house.jpg”);
     background-size: cover;
     background-attachment: fixed;
     position: relative;
